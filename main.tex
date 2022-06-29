@@ -1,0 +1,76 @@
+\documentclass[25pt, a0paper, portrait, margin=0mm, innermargin=15mm,blockverticalspace=15mm, colspace=15mm, subcolspace=8mm]{tikzposter}
+
+\input{packages}
+\input{apparence}
+
+\title{\rightline{The Course Plan of The Magic University}}
+% \author{\rightline{葉珈妤、吳浩瑋、周庭碩、張惟鈞}}
+\author{\rightline{Chia-yu Yeh, Hao-wei Wu, Ting-shou Chou, Wei-chun Chang}}
+\institute{\rightline{Taipei Private YanPing High School}}
+    
+\usetitlestyle[]{sampletitle}
+\setlength{\columnseprule}{0.4pt}
+\addbibresource{Biblio/Biblio.bib}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\maketitle 
+% --- Lignes entre les colonnes
+\draw[DarkerGrey, line width=2mm, loosely dotted] (0,35) -- (0,-45); 
+% \draw[DarkerGrey, line width=2mm, loosely dotted] (15,35) -- (15,-40);
+
+%------------------------------------------------------------------------------
+% --------------------- CORPS DU POSTER ---------------------
+\begin{columns}
+\column{1}
+\begin{subcolumns}
+    %%%%%%%%%%%% COLONNE 1 %%%%%%%%%%%%%
+    \subcolumn{.5}
+   
+    % ---------------------------------INTRODUCTION ----------
+        \block{\textsc{Introduction}}{
+            \input{texts/Introduction}
+            \vspace{-2cm}
+        }
+    
+    % ---------------------------------METHODS----------
+        \block{\textsc{Methods}}{
+            \input{texts/Methods}
+            \vspace{-2cm}
+        }
+    
+    % --------------------------------- RESULTS ----------    
+    \block{\textsc{Results}}{
+            \input{texts/Results}
+            \vspace{-2cm}
+        }
+          
+    %%%%%%%%%%%%%%% COLONNE 2 %%%%%%%%%%%%%
+    \subcolumn{.5}
+    
+        % ---------------------------------  PARTIE 3----------
+        \block{\textsc{Partie 3}}{\innerblock{}{
+        \input{figures/figure2}} \lipsum[2]
+        \vspace{-2cm}}
+            
+        \note[targetoffsetx = 3cm, targetoffsety = 1cm, angle = 20, connection]{\textbf{exemple de note}}
+
+        
+    % --------------------------------- PARTIE 4  ----------
+        \block{\textsc{Partie 4}}{ \lipsum[3]
+            \vspace{-2cm}
+        }
+
+ 
+    \end{subcolumns}
+    
+
+    % ---------------------------------  BIBLIO ----------
+    \block{}{\vspace{1cm}
+       \printbibliography}
+       \end{columns}
+
+% ----------------- Ligne colorée à la fin du document -------------
+\node [above right, text=white,outer sep=45pt,minimum width=\paperwidth, align=center, draw, fill=titledarkcolor, color=point-lig] at (-43.6,-61) { \textcolor{white}{\normalsize Contact: prenom.nom@univ-grenoble-alpes.fr}};
+
+\end{document}
