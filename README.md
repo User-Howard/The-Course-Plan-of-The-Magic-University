@@ -1,6 +1,11 @@
 # The Course Plan of The Magic University
 
+<details>
+<summary>Show Poster Image</summary>
+
 ![image](https://github.com/User-Howard/The-Course-Plan-of-The-Magic-University/blob/main/output.png)
+
+</details>
 
 ## About
 
