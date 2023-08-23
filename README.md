@@ -9,7 +9,7 @@
 
 ## About
 
-Welcome to the repository for "The Course Plan of The Magic University" – a solution that helps plan and optimize student life at the magical university, offering insights into course selections and schedules.
+Welcome to the repository for "The Course Plan of The Magic University" – a solution that helps plan and optimize student life at the magical university.
 
 ## Authors
 
